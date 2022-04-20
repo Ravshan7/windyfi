@@ -14,7 +14,7 @@ const AuthStyled = styled.div`
   > div {
     background: #fff;
     width: 500px;
-    padding: 30px;
+    padding: 29px;
   }
 `
 
