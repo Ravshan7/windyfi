@@ -189,7 +189,7 @@ export default function Landing() {
     }, [selectedFeatureIndex, features])
 
     return (
-        <div>
+        <div style={{border: `1px solid red`}}>
             <ReactMapGL
                 {...viewport}
                 mapStyle={mapType}

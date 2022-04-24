@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { useAppDispatch } from "../../store"
 import { getProjectsApi } from "../../http/projects"
 import { useTypedSelector } from "../../hooks/useTypedSelector"
+import { Link } from "react-router-dom"
 
 const Projects = () => {
     const dispatch = useAppDispatch()
@@ -13,7 +14,7 @@ const Projects = () => {
 
     return (
         <div>
-            <h1>{JSON.stringify(projectList)}</h1>
+            <Link to="/landing">{JSON.stringify(projectList)}</Link>
         </div>
     )
 }

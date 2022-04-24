@@ -7,6 +7,8 @@ import BOPDatabase from "./BOPDatabase"
 import ProjectTeam from "./ProjectTeam"
 import { useAppDispatch } from "../../store"
 import { isAuthAC } from "../../store/reducer/app"
+import Landing from "../../views/Landing"
+import {Portal} from "react-portal"
 
 const { Header, Content, Sider } = Layout
 
@@ -55,6 +57,12 @@ const Dashboard = () => {
                     <Routes>
                         <Route path="/mycompany" element={<MyCompany />} />
                         <Route path="/projects" element={<Projects />} />
+                        <Route path="/landing" element={
+                            <Portal>
+                                <div className="mapsBlock">
+                                    <Landing />
+                                </div>
+                            </Portal>} />
                         <Route path="/wtgdatabase" element={<WTGDatabase />} />
                         <Route path="/dopdatabase" element={<BOPDatabase />} />
                         <Route path="/projectteam" element={<ProjectTeam />} />

@@ -18,9 +18,9 @@ function App() {
     }, [])
 
 
-    return <>
+    return <div>
         {routerApp}
-    </>
+    </div>
 }
 
 export default App

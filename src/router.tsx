@@ -1,10 +1,10 @@
 import { Auth } from "./pages/Auth/Auth"
-import Landing from "./views/Landing"
+import Dashboard from "./pages/Dashboard/Dashboard"
 
 export const router = (isAuth: boolean) => {
     if (!isAuth) {
         return <Auth />
     } else {
-        return <Landing />
+        return <Dashboard />
     }
 }
